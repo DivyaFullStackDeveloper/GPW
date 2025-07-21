@@ -49,7 +49,6 @@
         <ul class="nav-menu">
           <!-- nav links -->
           <li><a href="#home" class="nav-link">Home</a></li>
-     
           <li><a href="#schemes" class="nav-link">Schemes</a></li>
                <li><a href="#member" class="nav-link">Member</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
@@ -168,7 +167,7 @@
     </div>
   
     <section class="grid" id="schemes-grid">
-      <!-- Agriculture -->
+      <!-- Agriculture cards-->
       <div class="scheme-card agri">
         <i class="fas fa-tractor icon-agri"></i>
         <h3>PM Dhan‑Dhaanya Krishi Yojana</h3>
@@ -192,7 +191,7 @@
         </div>
       </div>
 
-      <!-- Infrastructure -->
+      <!-- Infrastructure cards-->
       <div class="scheme-card infra">
         <i class="fas fa-wifi icon-infra"></i>
         <h3>National Broadband Mission 2.0</h3>
@@ -225,7 +224,7 @@
         </div>
       </div>
 
-      <!-- Social Welfare -->
+      <!-- Social Welfare cards-->
       <div class="scheme-card social">
         <i class="fas fa-hand-holding-heart icon-social"></i>
         <h3>Nari Shakti Yojana</h3>
@@ -452,6 +451,7 @@
     </div>
     <script>
       const data = {
+        // birth certificate
         birth: {
           title:"Birth Certificate",
           desc:"Used for official birth registration. Required for school, ID, and government schemes.",
@@ -461,6 +461,7 @@
           applyLink:"#apply-birth",
           formLink:"#form-birth"
         },
+        // death certificate
         death: {
           title:"Death Certificate",
           desc:"Proof of a person's death. Used for legal and financial matters like pension, insurance.",
@@ -470,6 +471,7 @@
           applyLink:"#apply-death",
           formLink:"#form-death"
         },
+        // water connection
         water: {
           title:"Water Connection",
           desc:"Apply for new or modified water supply connections for home or farm.",
@@ -479,6 +481,7 @@
           applyLink:"#apply-water",
           formLink:"#form-water"
         },
+        // marriage certificate
         marriage: {
           title:"Marriage Certificate",
           desc:"Legal document verifying marriage. Required for visa, bank, and legal purposes.",
@@ -488,6 +491,7 @@
           applyLink:"#apply-marriage",
           formLink:"#form-marriage"
         },
+        // house tax
         tax: {
           title: "House Tax",
           desc: "Check and pay property/house tax. View receipts and clear dues.",
@@ -497,6 +501,7 @@
           applyLink: "#apply-tax",
           formLink: "#form-tax"
         },
+        // voter help
         aadhar: {
           title:"Aadhar / Voter Help",
           desc:"Help with new applications, corrections or updates in Aadhar or Voter ID.",
@@ -506,6 +511,7 @@
           applyLink:"#apply-aadhar",
           formLink:"#form-aadhar"
         },
+        // hrievance
         grievance: {
           title:"Grievance Form",
           desc:"Submit complaints about sanitation, roads, electricity, or local issues.",
@@ -515,6 +521,7 @@
           applyLink:"#apply-grievance",
           formLink:"#form-grievance"
         },
+        // light services
         lighting: {
           title:"Sanitation & Lighting",
           desc:"Request new streetlights, garbage collection, or public toilet repairs.",
@@ -524,6 +531,7 @@
           applyLink:"#apply-lighting",
           formLink:"#form-lighting"
         },
+        // essential certificate
         caste: {
           title:"Domicile / Income / Caste",
           desc:"Apply for essential certificates required for education, jobs, and schemes.",
@@ -533,6 +541,7 @@
           applyLink:"#apply-caste",
           formLink:"#form-caste"
         },
+        // rit request
         rti: {
           title:"RTI Request",
           desc:"File an RTI to access official Panchayat records or decisions.",
@@ -543,7 +552,7 @@
           formLink:"#form-rti"
         }
       };
-
+// function for show services
       function showService(key, e) {
         document.querySelectorAll('.service-btn').forEach(btn => btn.classList.remove('active'));
         if (e) e.target.classList.add('active');
@@ -573,11 +582,11 @@
              </div>
            `;
       }
-
-      // Load default service
+    // Load default service
       showService('birth');
     </script>
   </section>
+
    <!----------------------- document ----------------------------->                                                                                                                                                
   <section id="documents-section" class="py-5 bg-light text-center">
     <!-- Header Section -->
@@ -677,6 +686,7 @@
       </div>
     </section>
   </section>
+  
 <!--------------------- about-------------------->
   <section id="about" class="py-5 bg-light text-center">
     <div class="container">
@@ -758,23 +768,25 @@
         <div class="info-card">
           <h3>🏢 Grampanchayat Office</h3>
           <p>📍 Wiwara Village, Taluka Narkhed,<br>District Nagpur, Maharashtra</p>
-          <p>📞 <strong>Phone:</strong> +91-9876543210</p>
+          <p>📞 <strong>Phone:<a href="tel:+919373561415"></a></strong>+91-9373561415</p> 
           <p>📧 <strong>Email:</strong> info@wiwarapanchayat.in</p>
           <p>⏰ <strong>Office Hours:</strong> Mon - Sat: 10:00 AM - 5:00 PM</p>
         </div>
 
         <form class="form-card">
-          <h3>✉️ Send Us a Message</h3>
+          <!-- <h3>✉️ Send Us a Message</h3>
           <input type="text" placeholder="Your Full Name" required>
           <input type="email" placeholder="Your Email Address" required>
           <input type="text" placeholder="Subject" required>
           <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit">Send Message</button> -->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.2408301672678!2d78.4784541104724!3d21.35628161109559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd451fc2d421801%3A0xed4d79c09dfe4bc0!2sWiwara%2C%20Maharashtra%20441305!5e0!3m2!1sen!2sin!4v1752747586439!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </form>
       </div>
 
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.2408301672678!2d78.4784541104724!3d21.35628161109559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd451fc2d421801%3A0xed4d79c09dfe4bc0!2sWiwara%2C%20Maharashtra%20441305!5e0!3m2!1sen!2sin!4v1752747586439!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.2408301672678!2d78.4784541104724!3d21.35628161109559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd451fc2d421801%3A0xed4d79c09dfe4bc0!2sWiwara%2C%20Maharashtra%20441305!5e0!3m2!1sen!2sin!4v1752747586439!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
 
       <div class="additional">

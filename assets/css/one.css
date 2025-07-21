@@ -795,7 +795,7 @@
 
  @media (max-width: 768px) {
    .header {
-     padding: 40px 0 30px;
+     padding: 0;
    }
 
    .main-title {
@@ -1235,7 +1235,7 @@
    overflow: hidden;
    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
    background-color: #ffff;
-   text-align:left;
+  text-align: left;
  }
 
  .sidebar {
@@ -1265,7 +1265,7 @@
    font-weight: 600;
    cursor: pointer;
    transition: 0.3s ease;
-   text-align: left;
+  margin-left: 0px;
  }
 
  .service-btn:hover,
@@ -1278,7 +1278,7 @@
    flex: 1;
    padding: 24px;
    background-color: white;
-   overflow-y: auto;
+   text-align: left;
  }
 
  .content h3 {
@@ -1835,8 +1835,6 @@
     font-size: 14px;
     padding: 0 px;
   }
-
- 
   .demo-content,
   .container,
   .content,
@@ -1939,7 +1937,7 @@ html, body {
 }
 
 /* Extra Small Devices (Phones < 576px) */
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   body {
     font-size: 12px;
     padding: 0px;
@@ -1977,7 +1975,7 @@ html, body {
     font-size: 1.5rem;
     padding: 8px 16px;
   }
-}
+} */
 
 /* Small Devices (≥ 576px and < 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
