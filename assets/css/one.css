@@ -11,7 +11,7 @@
  .header-container {
   position: fixed;
   width: 100%;
- 
+  height: 17%;
   top: 0;
   left: 0;
   z-index: 999;
@@ -39,7 +39,7 @@
   align-items: center;
   padding: 16px 32px;
   max-width: 100%;
- 
+  height: 10%;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
@@ -51,8 +51,9 @@
  .logo-section {
    display: flex;
    align-items: center;
-   gap: 15px;
-   margin-left: 40px;
+   gap: 12px;
+   margin-left: 10px;
+   margin-top: 50px;
  }
 
  .logo-icon {
@@ -62,7 +63,7 @@
    border-radius: 50%;
    display: flex;
    align-items: center;
-   justify-content: center;
+   /* justify-content: center; */
    font-size: 24px;
    color: white;
    font-weight: bold;
@@ -73,13 +74,13 @@
  }
 
  .logo-title {
-   font-size: 1.5rem;
+   font-size: 18px;
    font-weight: 700;
-   margin-bottom: 2px;
+   margin-bottom: 30px;
  }
 
  .logo-subtitle {
-   font-size: 0.9rem;
+   font-size: 16px;
    font-weight: 400;
    opacity: 0.9;
  }
@@ -89,11 +90,11 @@
    display: flex;
    list-style: none;
    gap: 0;
+   margin-top: 28px;
 
  }
 
  .nav-item {
-
   position: relative;
 
  }
@@ -226,9 +227,14 @@
     padding: 0;
     font-family: sans-serif;
     background-color: white;
+  } 
+  .header-container {
+    height: 20%;
   }
+
    .main-header {
-     padding: 1rem;
+     padding: 8px;
+
    }
 
    .nav-menu {
@@ -237,6 +243,7 @@
 
    .mobile-menu-toggle {
      display: block;
+     margin-top: 70px;
    }
 
    .logo-title {
@@ -286,7 +293,7 @@
     background-color: white;
   }
    .main-header {
-     padding: 0.8rem;
+     padding: 8px;
    }
 
    .logo-title {
@@ -339,7 +346,7 @@
  }
 
  .carousel-item img {
-   height: 82vh;
+   height: 94vh;
    object-fit: cover;
  }
 
@@ -371,7 +378,7 @@
    flex-wrap: nowrap;
    justify-content: center;
    align-items: center;
-   gap: 15px;
+   gap: 9px;
    z-index: 10;
  }
 
@@ -645,7 +652,7 @@
  .member-position {
 
    color: #075B5E;
-   padding: 12px 24px;
+   /* padding: 12px 24px; */
    font-size: 20px;
    font-weight: 600;
    text-transform: uppercase;
@@ -833,8 +840,9 @@
 
    .member-card {
      padding: 30px 20px;
-      width: 320px;
-      margin-left: 50px;
+      width: 280px;
+      margin-left: 19px;
+      height: 290px;
    }
 
    .member-photo {
@@ -852,8 +860,9 @@
      font-size: 1.8rem;
    }
    .other-member-card {
-      width: 320px;
-      margin-left: 50px;
+      width: 285px;
+      margin-left: 16px;
+      height: 250px;
    padding: 30px 25px;
    text-align: center;
 
@@ -1151,7 +1160,7 @@
 
    .tab {
      padding: 5px 10px;
-     font-size: 0.75rem;
+     font-size: 9px;
    }
 
    .grid {
@@ -1373,7 +1382,7 @@
    }
 
    .service-btn {
-     font-size: 0.8rem;
+     font-size: 7px;
      padding: 8px;
    }
 
@@ -1852,7 +1861,8 @@
   }
 
   .logo-title {
-    font-size: 1.2rem;
+    font-size: 14px;
+    margin-top: 20px;
   }
 
   .carousel-title-overlay {
@@ -1920,7 +1930,7 @@
   }
 
   .main-header {
-    padding: 2rem 4rem;
+    padding: 10px ;
   }
 
   .container {
