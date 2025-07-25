@@ -43,7 +43,8 @@ function filter(category) {
       });
 
     // services -------------------------------------------
-     const data = {
+      const data = {
+        // birth certificate
         birth: {
           title:"Birth Certificate",
           desc:"Used for official birth registration. Required for school, ID, and government schemes.",
@@ -53,6 +54,7 @@ function filter(category) {
           applyLink:"#apply-birth",
           formLink:"#form-birth"
         },
+        // death certificate
         death: {
           title:"Death Certificate",
           desc:"Proof of a person's death. Used for legal and financial matters like pension, insurance.",
@@ -62,6 +64,7 @@ function filter(category) {
           applyLink:"#apply-death",
           formLink:"#form-death"
         },
+        // water connection
         water: {
           title:"Water Connection",
           desc:"Apply for new or modified water supply connections for home or farm.",
@@ -71,6 +74,7 @@ function filter(category) {
           applyLink:"#apply-water",
           formLink:"#form-water"
         },
+        // marriage certificate
         marriage: {
           title:"Marriage Certificate",
           desc:"Legal document verifying marriage. Required for visa, bank, and legal purposes.",
@@ -80,6 +84,7 @@ function filter(category) {
           applyLink:"#apply-marriage",
           formLink:"#form-marriage"
         },
+        // house tax
         tax: {
           title: "House Tax",
           desc: "Check and pay property/house tax. View receipts and clear dues.",
@@ -89,6 +94,7 @@ function filter(category) {
           applyLink: "#apply-tax",
           formLink: "#form-tax"
         },
+        // voter help
         aadhar: {
           title:"Aadhar / Voter Help",
           desc:"Help with new applications, corrections or updates in Aadhar or Voter ID.",
@@ -98,6 +104,7 @@ function filter(category) {
           applyLink:"#apply-aadhar",
           formLink:"#form-aadhar"
         },
+        // hrievance
         grievance: {
           title:"Grievance Form",
           desc:"Submit complaints about sanitation, roads, electricity, or local issues.",
@@ -107,6 +114,7 @@ function filter(category) {
           applyLink:"#apply-grievance",
           formLink:"#form-grievance"
         },
+        // light services
         lighting: {
           title:"Sanitation & Lighting",
           desc:"Request new streetlights, garbage collection, or public toilet repairs.",
@@ -116,6 +124,7 @@ function filter(category) {
           applyLink:"#apply-lighting",
           formLink:"#form-lighting"
         },
+        // essential certificate
         caste: {
           title:"Domicile / Income / Caste",
           desc:"Apply for essential certificates required for education, jobs, and schemes.",
@@ -125,6 +134,7 @@ function filter(category) {
           applyLink:"#apply-caste",
           formLink:"#form-caste"
         },
+        // rit request
         rti: {
           title:"RTI Request",
           desc:"File an RTI to access official Panchayat records or decisions.",
@@ -135,7 +145,7 @@ function filter(category) {
           formLink:"#form-rti"
         }
       };
-
+// function for show services
       function showService(key, e) {
         document.querySelectorAll('.service-btn').forEach(btn => btn.classList.remove('active'));
         if (e) e.target.classList.add('active');
@@ -165,7 +175,8 @@ function filter(category) {
              </div>
            `;
       }
-
+    // Load default service
+      showService('birth');
       // Load default service
       showService('birth');
 
