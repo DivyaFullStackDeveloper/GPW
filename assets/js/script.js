@@ -1,3 +1,67 @@
+//  home section
+ document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileNav = document.getElementById(' desktopNav');
+      const mobileNavLinks = document.querySelectorAll('.nav-link');
+
+      mobileMenuToggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        const isExpanded = mobileNav.classList.contains('active');
+        this.setAttribute('aria-expanded', isExpanded);
+      });
+
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          mobileMenuToggle.classList.remove('active');
+          mobileNav.classList.remove('active');
+          mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      document.addEventListener('click', function (event) {
+        const isClickInsideNav = mobileNav.contains(event.target);
+        const isClickOnToggle = mobileMenuToggle.contains(event.target);
+        if (!isClickInsideNav && !isClickOnToggle && mobileNav.classList.contains('active')) {
+          mobileMenuToggle.classList.remove('active');
+          mobileNav.classList.remove('active');
+          mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) {
+          mobileMenuToggle.classList.remove('active');
+          mobileNav.classList.remove('active');
+          mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      const allNavLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+      allNavLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
+        });
+      });
+
+      // Loading animation
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.3s ease';
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+
 // Schemes-sections---------------------------
 
 function filter(category) {
